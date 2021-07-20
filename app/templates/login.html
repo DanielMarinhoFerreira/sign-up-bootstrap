@@ -1,0 +1,21 @@
+{% extends "base.html" %} 
+
+{% block title %}Login{% endblock %} 
+
+{% block Login %}
+<form method="POST">
+    <h3 align="center">Login</h3>
+    <div class="form-group">
+        <label for="email">Use sua conta cadastrada</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="E-mail cadastrado"/>
+    </div>
+    <div class="form-group">
+          <label for="senha">senha</label>
+          <input type="password" class="form-control" id="senha" name="senha" placeholder="senha cadastrada"/>
+    </div>
+        <br/>
+          <button type="submit" class="btn btn-primary" >Login</button>
+        <br/>
+          <button type="submit" class="btn btn-primary" >Criar Conta</button>
+</form>
+{% endblock %}
